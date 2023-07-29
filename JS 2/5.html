@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table id="table" border="1">
+  <tr>
+    <td>JAVA </td>
+    <td>JAVA SCRIPT</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>HTML</td>
+  </tr>
+</table>
+
+<button onclick="changeBorder()">Change Table Border</button>
+
+<script>
+
+  function changeBorder() {
+
+  const table = document.getElementById("table");
+  if (table.style.border === "1px solid black") {
+    table.style.border = "3px dashed red"; 
+  } else {
+    table.style.border = "1px solid black"; 
+  }
+}
+</script>
+</body>
+</html>

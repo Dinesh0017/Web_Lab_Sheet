@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" id="t">
+        <tr>
+            <td>Row 1 cell 1</td>
+            <td>Row 1 cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 cell 1</td>
+            <td>Row 2 cell 2</td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="addRow()">Add a Row</button>
+
+    <script>
+        function addRow() {
+            const table = document.getElementById("t");
+
+            const newRow = document.createElement("tr");
+            const cell1 = document.createElement("td");
+            const cell2 = document.createElement("td");
+
+             cell1.textContent = "New Row, Cell 1";
+             cell2.textContent = "New Row, Cell 2";
+
+            newRow.appendChild(cell1);
+            newRow.appendChild(cell2);
+
+            table.appendChild(newRow);
+        }
+    </script>
+</body>
+</html>
